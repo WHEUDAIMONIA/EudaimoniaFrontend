@@ -15,6 +15,9 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
   },
+  "engines": {
+    "node": "^20"
+  }
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
