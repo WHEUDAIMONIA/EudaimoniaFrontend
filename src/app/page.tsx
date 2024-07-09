@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Button from './components/Button'
 import AffiliationSlider from './components/Affliations'
@@ -14,6 +15,7 @@ export default function Home() {
         <div className='text-text-secondary my-6 px-20 text-center text-2xl'>
           {`Mental Health Made Easy ...`}
         </div>
+        <Button onClick={() => console.log('Button clicked!')}>Hello</Button>
       </section>
     </div>
   )
