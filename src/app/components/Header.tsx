@@ -1,18 +1,17 @@
 'use client'
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Header = () => {
-  const [isClick, setIsClick] = React.useState(false)
+export const Header: React.FC = () => {
+  const [isClick, setIsClick] = useState(false)
 
   const toggleNavbar = () => {
     setIsClick(!isClick)
   }
 
   return (
-    <header className='bg-white p-4 '>
+    <header className='bg-white p-4'>
       <div className='container mx-auto flex items-center justify-between'>
         <Link href='/' className='flex items-center'>
           <Image
@@ -100,5 +99,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
