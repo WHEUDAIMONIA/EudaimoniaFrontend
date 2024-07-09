@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
-import { Header } from './components/Header'
+import Header from './components/Header'
 import { Footer } from './components/Footer'
 import './globals.css'
 
@@ -20,10 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={space_grotesk.className}>
+      <body className={`${space_grotesk.className}`}>
         <Header />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   )
