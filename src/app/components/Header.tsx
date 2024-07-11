@@ -17,9 +17,9 @@ export const Header: React.FC = () => {
           <Image
             src='/images/logo.png'
             alt='Peacewave Logo'
-            className='h-8 w-8 md:h-12 md:w-12 lg:h-12 lg:w-12'
-            width={50}
-            height={50}
+            className='h-8 w-8 md:h-12 md:w-12 lg:h-14 lg:w-14'
+            width={60}
+            height={60}
           />
           <span className='ml-2 text-xl text-primary md:text-2xl lg:text-3xl'>
             Peacewave

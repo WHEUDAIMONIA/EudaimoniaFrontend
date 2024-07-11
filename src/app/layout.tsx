@@ -20,9 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${space_grotesk.className}`}>
-        <Header />
-        <main>{children}</main>
+      <body className={`${space_grotesk.className} bg-secondary`}>
+        <div className='flex min-h-screen flex-col'>
+          <Header />
+          <main className='flex-grow'>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
