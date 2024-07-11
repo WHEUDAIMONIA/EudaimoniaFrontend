@@ -19,6 +19,9 @@ const config = {
       }
     },
     extend: {
+      boxShadow: {
+        custom: '1px 14px 15px 0px rgba(153,153,153,1)'
+      },
       fontFamily: {
         andada: ['Andada Pro', 'serif']
       },

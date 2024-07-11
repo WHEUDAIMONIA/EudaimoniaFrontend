@@ -26,14 +26,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   learnMoreLink
 }) => {
   return (
-    <Card className='w-[350px] rounded-[24px] bg-white shadow-2xl'>
+    <Card className='w-[350px] rounded-[24px] bg-white shadow-xl drop-shadow-xl'>
       <CardHeader>
         <Image
           src={imageSrc}
           alt={title}
           width={90}
           height={90}
-          className='pb-7'
+          className='py-6'
         />
         <CardTitle className='font-andada text-4xl font-normal text-primary'>
           {title}
