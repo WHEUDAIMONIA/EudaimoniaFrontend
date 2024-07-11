@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           height={90}
           className='pb-7'
         />
-        <CardTitle className='font-andada text-4xl text-primary'>
+        <CardTitle className='font-andada text-4xl font-normal text-primary'>
           {title}
         </CardTitle>
       </CardHeader>

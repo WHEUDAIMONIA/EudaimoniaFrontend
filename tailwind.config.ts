@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        andada: ['var(--font-andada-pro)']
+        andada: ['Andada Pro', 'serif']
       },
       colors: {
         border: 'hsl(var(--border))',
