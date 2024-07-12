@@ -1,43 +1,16 @@
 'use client'
 import Button from './components/Button'
 
-export async function POSTFlask() {
-  try {
-    const val1 = 'rohit'
-    const val2 = '2'
-    const params = new URLSearchParams({
-      name: val1,
-      age: val2
-    })
-    const url = `http://localhost:5000/fetchuser?${params.toString()}`
-    console.log(url)
-    const res = await fetch(url, {
-      method: 'GET'
-      // headers: {
-      //   'Content-Type': 'application/json'
-      //   // 'API-Key': process.env.DATA_API_KEY!
-      // },
-      // body: JSON.stringify({ name: 'Hello Rohit' })
-    })
-    const data = await res.json()
-    console.log(data)
-    return Response.json(data)
-  } catch (err) {
-    console.log(err)
-  }
-}
-
 export async function AddUser() {
   try {
-    const url = `http://localhost:5000/adduser`
-    console.log(url)
+    const url = `https://peacewavebackend.azurewebsites.net/adduser`
+    // const url = `http://localhost:5000/adduser`
     const res = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
-        // 'API-Key': process.env.DATA_API_KEY!
       },
-      body: JSON.stringify({ name: 'Rohit Reddy' })
+      body: JSON.stringify({ user_email: 'test@gmail.com', isOauth: false })
     })
     const data = await res.json()
     console.log(data)
@@ -59,7 +32,7 @@ export default function Home() {
         <div className='text-text-secondary my-6 px-20 text-center text-2xl'>
           {`Mental Health Made Easy ...`}
         </div>
-        <Button onClick={AddUser}>Add User</Button>
+        <Button onClick={AddUser}>Add User Test</Button>
       </section>
     </div>
   )
