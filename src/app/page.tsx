@@ -7,6 +7,31 @@ import { title } from 'process'
 import { describe } from 'node:test'
 import { CardDescription } from '@/components/ui/card'
 
+const FounderCardData: FounderCardData[] = [
+  {
+    name: 'Soumil',
+    role: 'CEO',
+    imageSrc: '/images/avatars/soumil.png',
+    description:
+      'The principle objective behind the conceptualization of Peace Wave is for the existence of a platform that makes Mental health resources affordable and accessible for all, with the ongoing mental health pandemic of the 21st century  allowing people to be able to seamlessly and lucidly navigate the intricate nuances of their mental health journeys is the need of hour and we are here to streamline the process such that it is all within the grasp of our users fingertips'
+  },
+
+  {
+    name: 'Aashi',
+    role: 'CMO',
+    imageSrc: '/images/avatars/aashi.png',
+    description:
+      'It might be a lonely road to better mental health, but everyone deserves support along the way. We wish to use PeaceWave to provide a safe space where people may express themselves and get help while they work through this difficult process. Our goal is to establish a helpful community where users may meet people who are on similar paths and feel less isolated. We are here for you, every step of the way'
+  },
+  {
+    name: 'Bhavya',
+    role: 'CBO',
+    imageSrc: '/images/avatars/bhavya.png',
+    description:
+      "We understand firsthand how challenging the journey towards better mental health can be. It's a path filled with obstacles; feeling alone can make it even harder. That's why, at Peacewave, our mission is to make this journey a bit easier for you. We provide a supportive community where you can connect with others who understand what you're going through, along with access to therapists tailored to your specific needs. We're here so that you don't have to face this alone. Together, we can navigate this journey and make strides towards a healthier, happier you."
+  }
+]
+
 const serviceCardData: ServiceCardData[] = [
   {
     title: 'Newsletter',
@@ -95,6 +120,22 @@ export default function Home() {
               description={data.description}
               imageSrc={data.imageSrc}
               learnMoreLink={data.learnMoreLink}
+            />
+          ))}
+        </div>
+      </section>
+      <section className='container my-4 flex flex-col justify-center'>
+        <h1 className='text-center font-andada text-[65px] font-bold text-primary '>
+          What Our Founders Say
+        </h1>
+        <div className='gap-15 my-8 grid grid-cols-3'>
+          {FounderCardData.map((data, index) => (
+            <FounderCard
+              key={index}
+              name={data.name}
+              role={data.role}
+              imageSrc={data.imageSrc}
+              description={data.description}
             />
           ))}
         </div>
