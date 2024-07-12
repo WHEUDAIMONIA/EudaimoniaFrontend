@@ -1,9 +1,17 @@
 'use client'
-import Image from 'next/image'
 import Button from './components/Button'
-import AffiliationSlider from './components/Affliations'
 
 export default function Home() {
+  const callAPI = async () => {
+    try {
+      const res = await fetch(`https://api.sampleapis.com/coffee/hot`)
+      const data = await res.json()
+      console.log(data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
     <div>
       <section className='flex flex-col items-center justify-center py-24'>
@@ -15,7 +23,7 @@ export default function Home() {
         <div className='text-text-secondary my-6 px-20 text-center text-2xl'>
           {`Mental Health Made Easy ...`}
         </div>
-        <Button onClick={() => console.log('Button clicked!')}>Hello</Button>
+        <Button onClick={callAPI}>Hello</Button>
       </section>
     </div>
   )
