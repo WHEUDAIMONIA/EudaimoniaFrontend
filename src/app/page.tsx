@@ -1,6 +1,23 @@
-import Image from 'next/image'
+'use client'
 import Button from './components/Button'
-import AffiliationSlider from './components/Affliations'
+
+async function AddUser() {
+  try {
+    const url = `https://peacewavebackend.azurewebsites.net/adduser`
+    // const url = `http://localhost:5000/adduser`
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user_email: 'test@gmail.com', isOauth: false })
+    })
+    const data = await res.json()
+    console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
+}
 
 export default function Home() {
   return (
@@ -14,6 +31,7 @@ export default function Home() {
         <div className='text-text-secondary my-6 px-20 text-center text-2xl'>
           {`Mental Health Made Easy ...`}
         </div>
+        <Button onClick={AddUser}>Add User Test</Button>
       </section>
     </div>
   )
