@@ -1,7 +1,7 @@
 'use client'
 import Button from './components/Button'
 
-export async function AddUser() {
+async function AddUser() {
   try {
     const url = `https://peacewavebackend.azurewebsites.net/adduser`
     // const url = `http://localhost:5000/adduser`
@@ -14,7 +14,6 @@ export async function AddUser() {
     })
     const data = await res.json()
     console.log(data)
-    return Response.json(data)
   } catch (err) {
     console.log(err)
   }
