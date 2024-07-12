@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   learnMoreLink
 }) => {
   return (
-    <Card className='w-[350px] rounded-[24px] bg-white shadow-xl drop-shadow-xl'>
+    <Card className='h-[440px] w-[370px] rounded-[24px] bg-white shadow-xl drop-shadow-xl'>
       <CardHeader>
         <Image
           src={imageSrc}
