@@ -27,6 +27,26 @@ export async function POSTFlask() {
   }
 }
 
+export async function AddUser() {
+  try {
+    const url = `http://localhost:5000/adduser`
+    console.log(url)
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+        // 'API-Key': process.env.DATA_API_KEY!
+      },
+      body: JSON.stringify({ name: 'Rohit Reddy' })
+    })
+    const data = await res.json()
+    console.log(data)
+    return Response.json(data)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
 export default function Home() {
   return (
     <div>
@@ -39,7 +59,7 @@ export default function Home() {
         <div className='text-text-secondary my-6 px-20 text-center text-2xl'>
           {`Mental Health Made Easy ...`}
         </div>
-        <Button onClick={POSTFlask}>Hello</Button>
+        <Button onClick={AddUser}>Add User</Button>
       </section>
     </div>
   )
