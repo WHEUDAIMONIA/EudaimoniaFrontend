@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${space_grotesk.className} bg-secondary`}>
         <div className='flex min-h-screen flex-col'>
           <Header />
-          <main className='flex-grow'>{children}</main>
+          <main className='mx-4 flex-grow'>{children}</main>
           <Footer />
         </div>
       </body>

@@ -1,4 +1,4 @@
-import { Andada_Pro } from 'next/font/google'
+import { Andada_Pro, Roboto } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config = {
@@ -20,10 +20,11 @@ const config = {
     },
     extend: {
       boxShadow: {
-        custom: '1px 14px 15px 0px rgba(153,153,153,1)'
+        custom: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;'
       },
       fontFamily: {
-        andada: ['Andada Pro', 'serif']
+        andada: ['Andada Pro', 'serif'],
+        Roboto: ['Roboto', 'serif']
       },
       colors: {
         border: 'hsl(var(--border))',
