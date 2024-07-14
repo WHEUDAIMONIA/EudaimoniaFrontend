@@ -4,9 +4,9 @@ import React from 'react'
 export const Footer: React.FC<{}> = () => {
   return (
     <footer className='bg-primary'>
-      <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
+      <div className='mx-auto w-full max-w-screen-xl p-40 py-6 lg:py-8'>
         <div className='md:flex md:justify-around'>
-          <div className='my-auto w-1/4'>
+          <div className='my-auto'>
             <Link href='/'>
               <Image
                 src='/images/logo_text.png'
@@ -16,7 +16,7 @@ export const Footer: React.FC<{}> = () => {
               />
             </Link>
           </div>
-          <div className='grid grid-cols-2 gap-8 font-andada sm:grid-cols-3 sm:gap-6'>
+          <div className='grid grid-cols-2 gap-8 font-andada sm:grid-cols-3'>
             <div className='text-center'>
               <h2 className='mb-6 text-lg font-semibold uppercase text-white '>
                 Our Services

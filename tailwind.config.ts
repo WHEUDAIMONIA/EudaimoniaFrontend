@@ -23,7 +23,7 @@ const config = {
         'banner-pattern': "url('/images/background_ribbon.png')"
       },
       boxShadow: {
-        custom: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;'
+        custom: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'
       },
       fontFamily: {
         andada: ['Andada Pro', 'serif'],
@@ -36,7 +36,7 @@ const config = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: '#52B4B5',
-        seconday: '#E8E8E6',
+        secondary: '#FFFFFF',
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))'

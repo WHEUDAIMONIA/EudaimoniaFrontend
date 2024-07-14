@@ -1,12 +1,7 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import { Header } from '../components/header'
+import { Footer } from '../components/footer'
 import './globals.css'
-
-const space_grotesk = Space_Grotesk({
-  subsets: ['latin']
-})
 
 export const metadata: Metadata = {
   title: 'W&H',
@@ -20,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${space_grotesk.className} bg-secondary`}>
+      <body>
         <div className='flex min-h-screen flex-col'>
           <Header />
           <main className='mx-4 flex-grow'>{children}</main>
