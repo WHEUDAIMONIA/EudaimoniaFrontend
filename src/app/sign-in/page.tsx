@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Card } from '@/components/ui/card'
 
-export default function SignUp() {
+export default function SignIn() {
   return (
     <div
       className='flex items-center justify-center bg-primary bg-auth-page bg-cover bg-center'
@@ -35,7 +35,7 @@ export default function SignUp() {
               height={200}
             />
           </div>
-          <div className='flex w-1/2'>Sign Up</div>
+          <div className='flex w-1/2'>Sign In</div>
         </section>
       </Card>
     </div>
