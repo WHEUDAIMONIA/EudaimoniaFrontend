@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
 export const Footer: React.FC<{}> = () => {
   return (
     <footer className='bg-primary'>

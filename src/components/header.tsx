@@ -26,17 +26,18 @@ export const Header: React.FC = () => {
           </span>
         </Link>
         <nav className='hidden space-x-10 text-primary md:flex'>
-          <Link href='/our-journey'>Our Journey</Link>
-          <Link href='/journaling'>Journaling</Link>
-          <Link href='/resources'>Resources</Link>
-          <Link href='/community'>Community</Link>
-          <Link href='/access'>Access</Link>
-          <Link href='/sign-up'>Sign Up</Link>
+          <Link href='/'>Our Journey</Link>
+          <Link href='/'>Journaling</Link>
+          <Link href='/'>Resources</Link>
+          <Link href='/'>Community</Link>
+          <Link href='/'>Access</Link>
+          <Link href='/'>Sign Up</Link>
+          <Link href='/'>Sign In</Link>
         </nav>
         <div className='flex items-center'>
-          <div className='overflow-hidden rounded-full'>
+          {/* <div className='overflow-hidden rounded-full'>
             <Image src='/images/usr.png' alt='Profile' width={40} height={40} />
-          </div>
+          </div> */}
           <button
             className='ml-2 flex h-8 w-8 items-center justify-center rounded-full text-primary md:hidden'
             onClick={toggleNavbar}
@@ -77,23 +78,26 @@ export const Header: React.FC = () => {
       <nav
         className={`${isClick ? 'block' : 'hidden'} bg-white p-4 text-primary md:hidden`}
       >
-        <Link href='/our-journey' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Our Journey
         </Link>
-        <Link href='/journaling' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Journaling
         </Link>
-        <Link href='/resources' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Resources
         </Link>
-        <Link href='/community' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Community
         </Link>
-        <Link href='/access' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Access
         </Link>
-        <Link href='/sign-up' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Sign Up
+        </Link>
+        <Link href='/' className='block py-2'>
+          Sign In
         </Link>
       </nav>
     </header>

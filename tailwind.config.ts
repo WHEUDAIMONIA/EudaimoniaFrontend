@@ -20,7 +20,8 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'banner-pattern': "url('/images/background_ribbon.png')"
+        'banner-pattern': "url('/images/background_ribbon.png')",
+        'auth-page': "url('/images/background_auth.png')"
       },
       boxShadow: {
         custom: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'
