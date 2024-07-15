@@ -26,13 +26,13 @@ export const Header: React.FC = () => {
           </span>
         </Link>
         <nav className='hidden space-x-10 text-primary md:flex'>
-          <Link href='/coming-soon'>Our Journey</Link>
-          <Link href='/coming-soon'>Journaling</Link>
-          <Link href='/coming-soon'>Resources</Link>
-          <Link href='/coming-soon'>Community</Link>
-          <Link href='/coming-soon'>Access</Link>
-          <Link href='/sign-up'>Sign Up</Link>
-          <Link href='/sign-in'>Sign In</Link>
+          <Link href='/'>Our Journey</Link>
+          <Link href='/'>Journaling</Link>
+          <Link href='/'>Resources</Link>
+          <Link href='/'>Community</Link>
+          <Link href='/'>Access</Link>
+          <Link href='/'>Sign Up</Link>
+          <Link href='/'>Sign In</Link>
         </nav>
         <div className='flex items-center'>
           {/* <div className='overflow-hidden rounded-full'>
@@ -78,25 +78,25 @@ export const Header: React.FC = () => {
       <nav
         className={`${isClick ? 'block' : 'hidden'} bg-white p-4 text-primary md:hidden`}
       >
-        <Link href='/coming-soon' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Our Journey
         </Link>
-        <Link href='/coming-soon' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Journaling
         </Link>
-        <Link href='/coming-soon' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Resources
         </Link>
-        <Link href='/coming-soon' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Community
         </Link>
-        <Link href='/access' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Access
         </Link>
-        <Link href='/sign-up' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Sign Up
         </Link>
-        <Link href='/sign-in' className='block py-2'>
+        <Link href='/' className='block py-2'>
           Sign In
         </Link>
       </nav>
