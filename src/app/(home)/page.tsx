@@ -22,7 +22,7 @@ const founderCardData = [
   },
   {
     name: 'Bhavya',
-    role: 'CBO',
+    role: 'COO',
     imageSrc: '/images/avatars/bhavya.png',
     description:
       "We understand firsthand how challenging the journey towards better mental health can be. It's a path filled with obstacles; feeling alone can make it even harder. That's why, at Peacewave, our mission is to make this journey a bit easier for you. We provide a supportive community where you can connect with others who understand what you're going through, along with access to therapists tailored to your specific needs. We're here so that you don't have to face this alone. Together, we can navigate this journey and make strides towards a healthier, happier you."
